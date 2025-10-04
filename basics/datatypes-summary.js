@@ -32,14 +32,14 @@ console.log( id === anotherId);
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log( id === anotherId);
+// console.log( id === anotherId);
 
 // NOTE : Here even we have same values but Symbol make return value unique
 
 /* ******************************* */
 
 const bigNumber = 45366565656n  // Note: use n at the end of number and it convert to bigInt
-console.log(typeof bigNumber); 
+// console.log(typeof bigNumber); 
 
 
 /* Note: 
@@ -60,6 +60,34 @@ to the variable.
 
     //Array, Objects, Functions
 */
+
+// Array
+
+const heros = ["Shaktiman", "Junior-G", "Naagraj"] // we declare Array with square brackets and have value inside 
+let myObj = { // Can store objects in variable
+    name: "Param",  // These are objects in key:value pairs form within curley braces 
+    age: 39
+}
+
+
+//Basic Function declaration as variable
+
+// function declaration example : function(){}
+
+const myFunction = function (){ // We can store function in variable
+    console.log("Hello World");    
+}
+
+console.log(typeof bigNumber);
+console.log(typeof outsideTemp);  //datatype object (null)
+console.log(typeof scoreValue);
+console.log(typeof anotherId);  //datatype symbol
+console.log(typeof myFunction); //datatype function
+
+//Note : function return type is object function
+// Note : all non-primitive data type return typeof object
+
+
 
 
 
