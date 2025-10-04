@@ -1,17 +1,16 @@
 // We have 2 type of data type i.e PRIMITIVE and NON-PRIMITIVE [Reference Type]
 // Difference between them is Call By Value & Call By Reference
-// Basically it differentitate on basis of How these all data store in memory and how you can access that data 
+// Basically it differentitate on basis of How data store in memory and how you can access that data 
 
 // PRIMITIVE Data Types
-
 /*
-in Primitive Data type whenever you make a copy of that data  type for use anywhere, you not get memory reference of original data 
+in Primitive Data type whenever you make a copy of that data type for use anywhere, you not get memory reference of original data, 
 you only get copy of that data and whatever changes you will make , it apply in copy only and not in original data.
 
 7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt
            # null (means empty not zero)
            # undefined (when only declare memory space but not provide value)
-           # Symbol (when you use a single component multiple times and kin of requirement occur that we need to make that component unique,
+           # Symbol (when you use a single component multiple times and kind of requirement occur that we need to make that component unique,
            then we use symbol. we wrap that compnanet in symbol and use further. its basicaly use to make things unique.) 
 */
 
@@ -78,9 +77,9 @@ const myFunction = function (){ // We can store function in variable
     console.log("Hello World");    
 }
 
-console.log(typeof bigNumber);
+console.log(typeof bigNumber); //datatype bigint
 console.log(typeof outsideTemp);  //datatype object (null)
-console.log(typeof scoreValue);
+console.log(typeof scoreValue); //datatype number
 console.log(typeof anotherId);  //datatype symbol
 console.log(typeof myFunction); //datatype function
 
