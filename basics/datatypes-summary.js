@@ -77,14 +77,50 @@ const myFunction = function (){ // We can store function in variable
     console.log("Hello World");    
 }
 
-console.log(typeof bigNumber); //datatype bigint
-console.log(typeof outsideTemp);  //datatype object (null)
-console.log(typeof scoreValue); //datatype number
-console.log(typeof anotherId);  //datatype symbol
-console.log(typeof myFunction); //datatype function
+// console.log(typeof bigNumber); //datatype bigint
+// console.log(typeof outsideTemp);  //datatype object (null)
+// console.log(typeof scoreValue); //datatype number
+// console.log(typeof anotherId);  //datatype symbol
+// console.log(typeof myFunction); //datatype function
 
 //Note : function return type is object function
 // Note : all non-primitive data type return typeof object
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory types and how it works and memory allocation in javascript
+
+// we have two types of memory , Stack and Heap
+// Stack use in Primitive Type
+// Heap use in Non-Primitive Type
+
+// in STACK memory, when we declare a variable, we get copy of that variable.
+// in HEAP we an object define we get reference of original value
+
+// Example of Stack Memory : We get a copy of value
+
+let myYoutubename = "inforevernow" // so all primitve values will go in Stack
+let anotherName = myYoutubename
+anotherName = "theGamefuel"
+// console.log(anotherName);
+// console.log(myYoutubename);
+
+//Example of Heap Memory : we get reference means we make changes in original value
+let userOne = {
+    email: "user@gmail.com",
+    upi: "userpayment@grow"
+}
+
+let userTwo = userOne
+userTwo.email = "user@yahoo.com" 
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
 
 
 
