@@ -59,13 +59,71 @@ const users = [
 
 users[1].email // can acces value like that
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // here we put all key in an array and now we can acccess keys with loop
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); // create array under array with key and value
+//console.log(tinderUser);
+//console.log(Object.keys(tinderUser)); // here we put all key in an array and now we can acccess keys with loop
+//console.log(Object.values(tinderUser));
+//console.log(Object.entries(tinderUser)); // create array under array with key and value
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // here we can check if that object has specific property or not
-console.log(tinderUser.hasOwnProperty('isLogged'));
+//console.log(tinderUser.hasOwnProperty('isLoggedIn')); // here we can check if that object has specific property or not
+//console.log(tinderUser.hasOwnProperty('isLogged'));
+
+// ++++++++++++++++++ Destructue Object +++++++++++++++++ //
+
+// react example
+
+const course = {
+    courseName: "JS",
+    price: 999,
+    courseInstructor: "param"
+}
+
+// course.courseInstructor
+
+//const {courseInstructor: instructure} = course
+
+const {courseInstructor: instructure, price, courseName: cName} = course // rename an object is object distructure
+//console.log(courseInstructor);
+console.log(instructure, price, cName);
+
+
+// Can destruct array also, will discuss later
+
+// ++++++ API Handeling ++++++++ //
+
+// Firstliy API available in xml FormData, but now its available in JSON Format
+
+// {
+//     "name": "Param",
+//     "courseName": "js hindi",
+//     "price": "free"
+// }
+
+// Note: url for API ==> https://api.github.com/users/hiteshchoudhary
+
+// API can also available in array form
+
+// [
+//     {
+
+//     },
+
+//      {
+
+//     },
+
+//      {
+
+//     },
+
+// ]
+
+// Note: url => https://randomuser.me/
+// Note: url for modify api => https://jsonformatter.org/
+
+
+
+
+
 
 
 
