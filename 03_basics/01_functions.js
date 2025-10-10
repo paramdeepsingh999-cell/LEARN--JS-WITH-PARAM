@@ -111,7 +111,57 @@ function logUserMessage(username){
     return `${username} Just logged in`
 }
 
-console.log(logUserMessage());
+// console.log(logUserMessage());
+
+// +++++++ Case 6 is REST ++++++++++++++++++ // 
+
+// function calculatePrice(num1){
+//     return num1
+// }
+// console.log(calculatePrice(200));
+
+// function calculatePrice(...num1){ //rest operator (...) it return value in an array. so now we can work on array with loop and add number of values easily.
+//     return num1
+// }
+// console.log(calculatePrice(200, 400, 500));
+
+
+// function calculatePrice(val1, val2, ...num1){ // it put [ 500, 2000]  in array. bcz first 2 are in val1, val2
+//     return num1
+// }
+// console.log(calculatePrice(200, 400, 500, 2000));
+
+// ++++++++++++++ How to pass and use and object in function +++++++++++++//
+
+// const user = {
+//     username: "param",
+//     price: 999
+// }
+
+// function handleObject(anyobject){
+//     console.log(`Username is ${anyobject.username} and Price is ${anyobject.price}`);
+    
+// }
+// //handleObject(user)
+
+// handleObject({
+//     username: "Somu",
+//     price: 999
+// })
+
+
+// ************  Array Pass in function ************** //
+
+const myNewArray = [200, 400, 600, 900]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+//console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200, 400, 600, 900]));
+
+
 
 
 
