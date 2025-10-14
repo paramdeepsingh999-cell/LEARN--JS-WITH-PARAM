@@ -51,8 +51,37 @@
 // }
 
 // Case 3: if we have an empty object
-const emptyObje = {}
+// const emptyObje = {}
 
-if (Object.keys(emptyObje).length === 0) {
-    console.log("object Empty");    
-}
+// if (Object.val(emptyObje).length === 0) {
+//     console.log("object Empty");    
+// }
+
+// // console work
+
+// false == 0 // it will true
+// false == '' // it will true
+// 0 == '' // it will true
+
+// Nullish Coalescing operator (??) : null undefined
+
+let val1;
+//val1 = 5 ?? 10
+//val1 = null ?? 10
+
+// val1 = undefined ?? 15
+
+val1 = null ?? 10 ?? 20
+
+//console.log(val1);
+
+// Note: when call from DB , We get 2 values and can get null and undefined. to how treat value
+// this operator for null and undefined
+
+//************** Terniary Operator
+
+// condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+
