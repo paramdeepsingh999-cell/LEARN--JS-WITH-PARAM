@@ -5,6 +5,10 @@
 
 // const arr = [1, 2, 3, 4, 5]
 
+// for (const element of object) {
+    
+// }
+
 // for (const num of arr) {
 //     console.log(num);
 // }
@@ -18,14 +22,26 @@
 
 //Maps : it contain unique values only
 
-const map = new Map()
-map.set('IN', "INDIA")
-map.set('USA', "United State Of America")
-map.set('Fr', "France")
+// const map = new Map()
+// map.set('IN', "INDIA")
+// map.set('USA', "United State Of America")
+// map.set('Fr', "France")
 
-//console.log(map);
+// //console.log(map);
 
-for (const [key, value] of map) {
-    console.log(key);
+// for (const [key, value] of map) {
+//     console.log(key , ':-', value);
     
+// }
+
+//************** Case 4
+const myObjects = {
+    game1: 'NFS',
+    game2: 'Spiderman'
 }
+
+//forof loop not wotk on obj
+// for (const [key, value] of myObjects) {
+//     console.log(key , ':-', value);  
+    
+// }
