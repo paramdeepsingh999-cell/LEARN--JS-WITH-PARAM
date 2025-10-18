@@ -11,6 +11,7 @@
     </ul>
   </body>
   <script>
+    //basic way to create element and add element. but issue of tree treverse here. 
     function addLanguage(langName) {
       const li = document.createElement("li");
       li.innerHTML = `${langName}`;
@@ -18,6 +19,8 @@
     }
     addLanguage("python");
     addLanguage("type-script");
+
+    // another way with optimize style for big project. avoid innerHTML and use appendChild
 
     function addOptiLanguage(langName) {
       const li = document.createElement("li");
